@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Kodilla - Bootstrap</title>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--nav-->
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> 
+                    <a class="navbar-brand" href="#">STRONA O MNIE</a>
+                 </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">KARIERA</a> </li>
+                        <li><a href="#about">HOBBY</a> </li>
+                        <li><a href="#contact">KONTAKT</a> </li>
+                    </ul>
+             		<form class="navbar-form navbar-right" role="search">
+        				<div class="form-group">
+        				 <input type="text" class="form-control" placeholder="Szukaj">
+        				</div>
+        				<button type="submit" class="btn btn-default">Szukaj</button>
+      				</form>
+            	</div>  
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--carousel-->
+ <div class="container">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="img-responsive" src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?h=350&auto=compress&cs=tinysrgb">
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="https://images.pexels.com/photos/33065/monks-path-sunset-landscape.jpg?h=350&auto=compress&cs=tinysrgb">
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="https://images.pexels.com/photos/20967/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb">
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?h=350&auto=compress&cs=tinysrgb">
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="https://images.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg?h=350&auto=compress&cs=tinysrgb">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+
+<!--tabs-->
+	
+	<div class="container">
+		<ul class="nav nav-tabs" role="tablist">
+    		<li role="presentation" class="active"><a href="#omnie" aria-controls="home" role="tab" data-toggle="tab">O mnie</a></li>
+    		<li role="presentation"><a href="#kariera" aria-controls="profile" role="tab" data-toggle="tab">Kariera</a></li>
+    		<li role="presentation"><a href="#hobby" aria-controls="messages" role="tab" data-toggle="tab">Hobby</a></li>
+		</ul>
+		<div class="tab-content">
+    		<div role="tabpanel" class="tab-pane active text-justify" id="omnie"> „rodzinka.pl” to serial komediowy, który ¿artobliwymi scenkami komentuje i puentuje problemy wspó³czesnej rodziny. Ma³gorzata Ko¿uchowska i Tomasz Karolak poka¿¹ widzom TVP, ¿e rodzicielstwo ma wiele odcieni. Boscy maj¹ trzech synów. Poznali siê jeszcze na studiach i od tej pory stanowi¹...</div>
+    		<div role="tabpanel" class="tab-pane text-justify" id="kariera">Aplikanci radcowscy i adwokaccy zarabiaj¹ za ma³o. Czasem w ogóle. W ich obronie stanêli pos³owie. Wyst¹pili z interpelacj¹ do ministra sprawiedliwoœci, by ten rozwa¿y³, czy nie zapisaæ wynagrodzenia w regulaminie aplikacji.</div>
+    		<div role="tabpanel" class="tab-pane text-justify" id="hobby">czynnoœæ wykonywana dla relaksu w czasie wolnym od obowi¹zków. Mo¿e ³¹czyæ siê ze zdobywaniem wiedzy w danej dziedzinie, doskonaleniem swoich umiejêtnoœci w pewnym okreœlonym zakresie albo te¿ nawet z zarobkiem. G³ównym celem pozostaje jednak przyjemnoœæ p³yn¹ca z uprawiania hobby.
+    		</div>
+		</div>
+	</div>
+	
+<!--modal-->
+<div class="container">
+	<button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#myModal" data-keyboard="false" data-backdrop="false">Zapozna³e(a)m siê</button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">O autorze</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Micha³ Kwiatkowski – urodzony 2 czerwca 1990 w Toruniu, polski kolarz, wystêpuj¹cy obecnie w klubie TKK Pacific SMS Toruñ. W lipcu 2007 r. podczas Mistrzostw Europy rozgrywanych w Sofii wywalczy³ tytu³ Wicemistrza Europy w jeŸdzie indywidualnej na czas.</p>
+                            <p>Micha³ Kwiatkowski zdecydowa³ siê na przed³u¿enie umowy z Team Sky, poniewa¿ uzna³, ¿e to tutaj ma najlepsze warunki do rozwoju i walki o najwy¿sze trofea. Po nieudanym sezonie 2016 w tym roku Kwiato pokazuje znakomit¹ formê – wygra³ Strade Bianche, Mediolan-San Remo i Clasica San Sebastian, a do tego by³ bardzo wa¿nym przybocznym Christophera Froome’a w drodze po wygran¹ w Tour de France.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+                            <button type="button" class="btn btn-success">PotwierdŸ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div>
+  </div>	
+<!--script-->
+
+	 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
